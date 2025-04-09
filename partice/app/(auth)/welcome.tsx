@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 export default function Index() {
   const Route= useRouter();
   const gotologin=()=>{
-    Route.navigate("/(auth)/index")
+    Route.navigate("/(auth)")
   }
   return (
     <View
