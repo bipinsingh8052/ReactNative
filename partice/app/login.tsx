@@ -11,7 +11,10 @@ export default function login() {
     })
     const  router=useRouter();
     const gotoHome=()=>{
-        router.push("/(tabs)")
+        router.push("/components/sliderHome")
+    }
+    const gottoNext=()=>{
+        router.push("/components/sliderHome")
     }
   return (
     <ScrollView style={{
@@ -24,7 +27,7 @@ export default function login() {
             <TextInput placeholder="Enter your Email" style={{borderWidth:1, borderRadius:20, color:"white", margin:20, paddingHorizontal:10}} onChangeText={(e)=>console.log(e)}/>
             <TextInput placeholder="Enter Your Password" style={{borderWidth:1, borderRadius:20, margin:20, paddingHorizontal:10, color:"white"}} onChangeText={(e)=>console.log(e)}/>
             <TouchableOpacity style={{paddingHorizontal:10, paddingVertical:5, backgroundColor:"blue", margin:20,  borderRadius:20}} onPress={gotoHome}>
-                <Text style={{textAlign:"center", fontSize:20, color:"white"}} >Submit</Text>
+                <Text style={{textAlign:"center", fontSize:20, color:"white"}} onPress={gottoNext} >Submit</Text>
             </TouchableOpacity>
         </View>
     </ScrollView>

@@ -1,8 +1,13 @@
 import React from 'react'
-import { View } from 'react-native'
+import { SafeAreaView, ScrollView, View } from 'react-native'
+import Categories from '../components/Categories'
 
 export default function categories() {
   return (
-    <View style={{height:200, width:200, borderWidth:4}}>This is Categoury page</View>
+   <SafeAreaView>
+    <ScrollView>
+      <Categories/>
+    </ScrollView>
+   </SafeAreaView>
   )
 }
