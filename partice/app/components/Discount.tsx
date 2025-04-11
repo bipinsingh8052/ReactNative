@@ -14,7 +14,7 @@ export default function Discount() {
     
 
     
-    <View style={{flexDirection:"row", flexWrap:"wrap", gap:5}}>
+    <ScrollView horizontal style={{flexDirection:"row", flexWrap:"wrap", gap:5}}>
       {
         [1,2,3,5].map((e)=>{return(
           <View style={{height:300,  width:180, elevation:5, marginHorizontal:6, marginVertical:6, borderRadius:5, overflow:"hidden"}}>
@@ -23,11 +23,11 @@ export default function Discount() {
         <Text style={{position:"relative", top:-195, right:-130, backgroundColor:"red", padding:20, borderBottomLeftRadius:50, color:"white", fontSize:13}}>20%</Text>
       </View>
       <Text style={{height:60, padding:5, paddingHorizontal:10, fontSize:16, fontWeight:500}}>lretyuhioikjhgfdrtyuiokjhbgvfghj</Text>
-      <Text style={{fontSize:20, fontWeight:800, paddingLeft:10}}>$ 17,00</Text>
+      <Text style={{fontSize:20, fontWeight:800, paddingLeft:10}}>$ 17,000</Text>
       </View>
         )})
       }
-   </View>
+   </ScrollView>
    
 </View>
   )

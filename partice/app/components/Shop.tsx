@@ -1,8 +1,18 @@
 import { AntDesign } from '@expo/vector-icons'
-import React from 'react'
-import { Text, View ,Image, ScrollView, StyleSheet,TextInput } from 'react-native'
+import React, { useState } from 'react'
+import { Text, View ,Image, ScrollView, StyleSheet,TextInput, Dimensions } from 'react-native'
+import Carousel from 'react-native-reanimated-carousel';
+
+const { width } = Dimensions.get('window');
+
+const images = [
+  { id: 1, url: 'https://thumbs.dreamstime.com/b/vibrant-peacock-feather-resting-gently-lush-moss-single-brightly-colored-rests-delicately-covered-ground-tranquil-forest-363739804.jpg' },
+  { id: 2, url: 'https://thumbs.dreamstime.com/b/vibrant-peacock-feather-resting-gently-lush-moss-single-brightly-colored-rests-delicately-covered-ground-tranquil-forest-363739804.jpg' },
+  { id: 3, url: 'https://thumbs.dreamstime.com/b/vibrant-peacock-feather-resting-gently-lush-moss-single-brightly-colored-rests-delicately-covered-ground-tranquil-forest-363739804.jpg' },
+];
 
 export default function Shop() {
+  const [currentIndex, setCurrentIndex] = useState(0);
   return (
        <View style={{marginTop:20}}>
          <View style={{ flexDirection:"row", justifyContent:"space-between",  alignItems:"center"}}>
@@ -14,45 +24,72 @@ export default function Shop() {
          </View>
          </View>
          </View>
-         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {
-            [1,2,3,4].map((e)=>{return(
-              <View style={{ borderRadius:20, justifyContent:'center', alignItems:"center", paddingHorizontal:15, marginTop:30 }}>
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6FJM5C0-kDtM5KYpn91CkETTjM2uexzD9w&s"}} style={{width:380, height:200, borderRadius:20}} resizeMode='cover'  /> 
+         <View style={styles.container}>
+      <Carousel
+        width={width}
+        height={220}
+        autoPlay
+        data={images}
+        scrollAnimationDuration={1000}
+        onSnapToItem={(index) => setCurrentIndex(index)}
+        renderItem={({ item }) => (
+          <View style={styles.card}>
+            <Image source={{ uri: item.url }} style={styles.image} />
           </View>
-            )})
-          }
-         </ScrollView>
-         <View style={styles.dots}>
-                  <View style={styles.dotInactive} />
-                  <View style={styles.dotInactive} />
-                  <View style={styles.dotActive} />
-                </View>
+        )}
+      />
+    <View style={styles.pagination}>
+        {images.map((_, index) => (
+          <View
+            key={index}
+            style={[
+              styles.dot,
+              currentIndex === index ? styles.activeDot : styles.inactiveDot,
+            ]}
+          />
+        ))}
+      </View>
+         </View>
          </View>
         
   )
 }
-const styles = StyleSheet.create({
-   
-   
 
-    dots: {
-      flexDirection: 'row',
-      marginTop:20,
-      justifyContent: 'center',
-    },
-    dotInactive: {
-      width: 10,
-      height: 10,
-      backgroundColor: '#ccc',
-      borderRadius: 5,
-      margin: 5,
-    },
-    dotActive: {
-      width: 10,
-      height: 10,
-      backgroundColor: '#0066FF',
-      borderRadius: 5,
-      margin: 5,
-    },
-  });
+
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 40,
+    alignItems: 'center'
+  },
+  card: {
+    borderRadius: 10,
+    overflow: 'hidden',
+    justifyContent:"center",
+    alignItems:"center"
+  },
+  image: {
+    width: width - 40,
+    height: 200,
+    borderRadius: 12,
+  },
+  pagination: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 15,
+  },
+  dot: {
+    marginHorizontal: 4,
+    borderRadius: 5,
+  },
+  activeDot: {
+    width: 16,
+    height: 8,
+    backgroundColor: '#2e86de',
+  },
+  inactiveDot: {
+    width: 8,
+    height: 8,
+    backgroundColor: '#dcdde1',
+  },
+})

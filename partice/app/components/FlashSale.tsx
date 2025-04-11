@@ -6,7 +6,7 @@ import { Text, View ,Image, ScrollView } from 'react-native'
 export default function FlashSale() {
  
   return (
-    <View style={{height:800,  marginTop:10, marginLeft:10, marginRight:10}}>
+    <View style={{height:500,  marginTop:10, marginLeft:10, marginRight:10}}>
         <View style={{height:60, flexDirection:"row", justifyContent:"space-between", alignItems:"center"}}>
           <Text style={{fontSize:22, fontWeight:700}}>Flash Sale</Text>
           <View style={{flexDirection:"row", gap:20, alignItems:"center", justifyContent:"center", paddingRight:20}}>
@@ -20,15 +20,18 @@ export default function FlashSale() {
         </View>
         <View>
           <View style={{flexDirection:"row", flexWrap:"wrap", gap:10, paddingHorizontal:5}}>
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
-            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:120, height:120, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4TbIwZyapkC_MJX3SEVgkaNfYZzOGLPtkA&s"}} style={{width:100, height:100, borderRadius:10}} />
           </View>
         </View>
          

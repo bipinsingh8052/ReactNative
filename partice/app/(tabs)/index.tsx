@@ -8,6 +8,7 @@ import FlashSale from '../components/FlashSale'
 import TopProduct from '../components/TopProduct'
 import JustForYou from '../components/JustForYou'
 import Shop from '../components/Shop'
+import ShopViewProject from '../components/ShopViewProject'
 
 export default function index() {
   return (
@@ -15,11 +16,12 @@ export default function index() {
       <ScrollView>
         {/* <Profile/> */}
         <Shop/>
+        <ShopViewProject/>
         {/* <NewItems/>
         <Mostpopular/> */}
         <Categories/>
         <TopProduct/>
-        <FlashSale/>
+        <FlashSale/> 
         <NewItems/>
         <FlashSale/>
         <Mostpopular/>

@@ -6,7 +6,7 @@ import { Text, View ,Image, ScrollView } from 'react-native'
 export default function Categories() {
  
   return (
-    <View style={{height:800,  marginTop:10, marginLeft:10, marginRight:10}}>
+    <View style={{height:350,  marginTop:10, marginLeft:10, marginRight:10}}>
         <View style={{height:60, flexDirection:"row", justifyContent:"space-between", alignItems:"center"}}>
           <Text style={{fontSize:22, fontWeight:700}}>Categories</Text>
           <View style={{flexDirection:"row", gap:20, alignItems:"center", justifyContent:"center", paddingRight:20}}>
@@ -17,7 +17,7 @@ export default function Categories() {
           </View>
         </View>
 
-<ScrollView>
+<ScrollView horizontal>
 <View style={{flexDirection:"row", flexWrap:"wrap"}}>
               <View style={{ elevation:5, borderWidth:1, marginHorizontal:5, borderRadius:5, overflow:"hidden", marginTop:5}}>
           <View  style={{height:220, width:170, flexDirection:"row"}}>

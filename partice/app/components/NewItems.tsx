@@ -4,7 +4,7 @@ import { Text, View ,Image, ScrollView } from 'react-native'
 
 export default function NewItems() {
   return (
-    <View style={{height:400,  marginTop:10, marginLeft:10, marginRight:10}}>
+    <View style={{height:400,  marginTop:0, marginLeft:10, marginRight:10}}>
         <View style={{height:60, flexDirection:"row", justifyContent:"space-between", alignItems:"center"}}>
           <Text style={{fontSize:22, fontWeight:700}}>New Items</Text>
           <View style={{flexDirection:"row", gap:20, alignItems:"center", justifyContent:"center", paddingRight:20}}>

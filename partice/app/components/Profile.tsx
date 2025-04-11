@@ -5,12 +5,12 @@ import { View,Text, Image, TouchableOpacity, ScrollView } from 'react-native'
 export default function Profile() {
   return (
    <View>
-    <View style={{height:80, flexDirection:"row", gap:10, justifyContent:"center", alignItems:"center"}}> 
+    <View style={{height:80, flexDirection:"row", gap:20, justifyContent:"center", alignItems:"center"}}> 
       <View style={{ height:40, width:40, elevation:10, justifyContent:"flex-start"}}>
         <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79cUcZrJ5loJxsDgX0CCdPe58pOqM7HgXyQ&s"}} style={{ width:50,height:50,borderRadius:50}}/>
       </View>
       
-        <TouchableOpacity style={{backgroundColor:"blue", marginLeft:40, height:40, borderRadius:20, justifyContent:"center",  paddingLeft:15, paddingRight:15}}>
+        <TouchableOpacity style={{backgroundColor:"blue", marginLeft:20, height:40, borderRadius:20, justifyContent:"center",  paddingLeft:15, paddingRight:15}}>
           <Text style={{fontSize:10, textAlign:"center", color:"white"}}> My Activity</Text>
         </TouchableOpacity>
        <View style={{alignItems:"center",   width:"30%", flexDirection:"row", justifyContent:"flex-end", gap:10}}>
