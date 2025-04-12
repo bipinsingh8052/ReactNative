@@ -1,9 +1,16 @@
 import { AntDesign } from '@expo/vector-icons'
+import { useRouter } from 'expo-router'
 import React from 'react'
 import { Text, View ,Image, ScrollView } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 
 
 export default function Categories() {
+  const route=useRouter();
+  const gotoDetail=()=>{
+    console.log("nav")
+    route.push("/(product)")
+  }
  
   return (
     <View style={{height:350,  marginTop:10, marginLeft:10, marginRight:10}}>
@@ -19,6 +26,7 @@ export default function Categories() {
 
 <ScrollView horizontal>
 <View style={{flexDirection:"row", flexWrap:"wrap"}}>
+  <TouchableOpacity onPress={()=>{gotoDetail()}}>
               <View style={{ elevation:5, borderWidth:1, marginHorizontal:5, borderRadius:5, overflow:"hidden", marginTop:5}}>
           <View  style={{height:220, width:170, flexDirection:"row"}}>
             <View style={{ height:220, width:170, flexDirection:"row", flexWrap:"wrap", gap:2}}>
@@ -35,6 +43,7 @@ export default function Categories() {
           </View>
         
           </View>
+          </TouchableOpacity>
           <View style={{ elevation:5, borderWidth:1, marginHorizontal:5, borderRadius:5, overflow:"hidden", marginTop:5}}>
           <View  style={{height:220, width:170, flexDirection:"row"}}>
             <View style={{ height:220, width:170, flexDirection:"row", flexWrap:"wrap", gap:2}}>

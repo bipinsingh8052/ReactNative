@@ -16,8 +16,8 @@ const OnboardingScreen = () => {
      <ScrollView style={{marginTop:150, marginRight:20, }} horizontal={true}>
    
       {
-        [1,2,3].map((e)=>{return(
-          <View style={{height:450, width:300, backgroundColor:"white",  borderRadius:20,  display:"flex", elevation:5, borderWidth:0.1  ,marginLeft:20}}>
+        [1,2,3].map((e,index)=>{return(
+          <View key={index} style={{height:450, width:300, backgroundColor:"white",  borderRadius:20,  display:"flex", elevation:5, borderWidth:0.1  ,marginLeft:20}}>
       
       <View style={{height:180,width:"100%"}}>
         <Image source={{uri:"https://lh3.googleusercontent.com/4nn_Wu86KECp5LlECA4tGGb7TdULkfoAe74NJN1PPMTf1IDXO0VvpYgBE2146dE3ezHgsmfkTHjYS6YEGUEJCmvPIeCnrwUnk1fvwwk0flUu=s750"}} style={{height:"100%",width:"100%"}}/>
