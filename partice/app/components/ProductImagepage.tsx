@@ -15,8 +15,8 @@ export default function ProductImagepage() {
     
     <Carousel
         width={width}
-        height={720}
-        autoPlay="1"
+        height={520}
+        autoPlay="auto"
         data={images}
         scrollAnimationDuration={1000}
         onSnapToItem={(index) => setCurrentIndex(index)}
@@ -45,7 +45,7 @@ export default function ProductImagepage() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 40,
+    marginTop: 0,
     alignItems: 'center'
   },
   card: {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignSelf:"center",
     
     width: width - 5,
-    height: 700,
+    height: 500,
     borderRadius: 12,
   },
   pagination: {

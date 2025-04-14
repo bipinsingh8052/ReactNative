@@ -1,7 +1,7 @@
 import { AntDesign } from '@expo/vector-icons';
 import React, { useState } from 'react'
 import { Image, ScrollView, Text, TextInput, View } from 'react-native'
-import { TouchableOpacity } from 'react-native';
+// import { TouchableOpacity } from 'react-native';
 export default function Reviews() {
   return (
     <View style={{paddingHorizontal:20, marginTop:10}}>

@@ -18,8 +18,8 @@ export default function Mostpopular() {
         </View>
         <ScrollView horizontal>
           {
-            [1,2,3,5,6,7,7,7,8,8,8,8,8,8,,8,8,8].map((e)=>{return(
-              <View style={{height:250,  width:200, elevation:5, borderWidth:1, marginHorizontal:20, borderRadius:5, overflow:"hidden"}}>
+            [1,2,3,5,6,7,7,7,8,8,8,8,8,8,,8,8,8].map((e,index)=>{return(
+              <View key={index} style={{height:250,  width:200, elevation:5, borderWidth:1, marginHorizontal:20, borderRadius:5, overflow:"hidden"}}>
           <View  style={{height:200, width:200}}>
             <Image source={{uri:"https://www.thesun.co.uk/wp-content/uploads/2021/12/MT-SHOPPING-OFF-PLATT.jpg?strip=all&quality=100&w=1200&h=800&crop=1"}} style={{height:"96%" ,width:"96%" }} />
           </View>

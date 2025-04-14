@@ -14,11 +14,9 @@ export default function index() {
   return (
     <SafeAreaView>
       <ScrollView>
-        {/* <Profile/> */}
         <Shop/>
         <ShopViewProject/>
-        {/* <NewItems/>
-        <Mostpopular/> */}
+       
         <Categories/>
         <TopProduct/>
         <FlashSale/> 

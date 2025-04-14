@@ -47,7 +47,7 @@ return(
       </View>
     </View>
     {
-      show?" ":<Reviews/>
+      show?<Text></Text>:<Reviews/>
     }
 
 

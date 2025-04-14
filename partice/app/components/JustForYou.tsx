@@ -11,8 +11,8 @@ export default function JustForYou() {
     </View>
     <View style={{flexDirection:"row", flexWrap:"wrap", gap:5}}>
       {
-        [1,2,3,5].map((e)=>{return(
-          <View style={{height:200,  width:150, elevation:5, marginHorizontal:6, marginVertical:6, borderRadius:5, overflow:"hidden"}}>
+        [1,2,3,5].map((e,index)=>{return(
+          <View key={index} style={{height:200,  width:150, elevation:5, marginHorizontal:6, marginVertical:6, borderRadius:5, overflow:"hidden"}}>
       <View  style={{height:150, width:140}}>
         <Image source={{uri:"https://www.thesun.co.uk/wp-content/uploads/2021/12/MT-SHOPPING-OFF-PLATT.jpg?strip=all&quality=100&w=1200&h=800&crop=1"}} style={{height:"96%" ,width:140, left:5 }} />
       </View>

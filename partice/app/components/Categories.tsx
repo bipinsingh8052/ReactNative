@@ -8,8 +8,8 @@ import { TouchableOpacity } from 'react-native'
 export default function Categories() {
   const route=useRouter();
   const gotoDetail=()=>{
-    console.log("nav")
-    route.push("/(product)")
+    // console.log("nav")
+    route.push("/ProductDetailsAll")
   }
  
   return (

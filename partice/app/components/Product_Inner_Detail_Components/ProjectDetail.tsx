@@ -7,10 +7,10 @@ import ProductImagepage from "../ProductImagepage";
 export default function ProjectDetail() {
   
   return (
-    <SafeAreaView> <ScrollView>
+    <SafeAreaView>
+       <ScrollView>
       
    <ProductImagepage/>
-   {/* <ProjectDetail */}
 
    <View>
     <View style={{flexDirection:"row", justifyContent:"space-between", alignItems:"center", marginTop:10, paddingHorizontal:25}}> 
@@ -29,21 +29,22 @@ export default function ProjectDetail() {
       <Text style={{padding:5, backgroundColor:"lightgray", borderRadius:5}}>M</Text>
       </View>
       <View style={{padding:8, backgroundColor:"blue", borderRadius:50, marginBottom:5}}>
-        <AntDesign name="arrowright" size={24} color={"white"}/>
+       <Text> <AntDesign name="arrowright" size={24} color={"white"}/></Text>
       </View>
      
     </View>
     <View style={{paddingHorizontal:20, marginTop:20}}>
     <ScrollView horizontal >
       {
-        [1,2,3,3].map((e)=>{return(
-          <Image source={{uri:"https://media.istockphoto.com/id/136881877/photo/mountain-lake-with-dock-and-stars.jpg?s=612x612&w=0&k=20&c=hwMVAc4R5UGAOrQoZiXV4MYjuXodHWElPJp_ogCZySw="}} style={{height:100,width:80, borderRadius:5, marginLeft:10}} resizeMode="cover" />
+        [1,2,3,3].map((e,index)=>{return(
+          <Image key={index} source={{uri:"https://media.istockphoto.com/id/136881877/photo/mountain-lake-with-dock-and-stars.jpg?s=612x612&w=0&k=20&c=hwMVAc4R5UGAOrQoZiXV4MYjuXodHWElPJp_ogCZySw="}} style={{height:100,width:80, borderRadius:5, marginLeft:10}} resizeMode="cover" />
         )})
       }
       </ScrollView>
     </View>
    </View>
-      </ScrollView> </SafeAreaView>
+      </ScrollView>
+       </SafeAreaView>
    
   );
 }
